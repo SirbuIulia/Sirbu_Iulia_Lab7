@@ -11,8 +11,12 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+			})
+		    .ConfigureEssentials(essentials =>
+			{
+             essentials.UseMapServiceToken("5XrNDULbC0yA8qEOhOtM~3jd4N_lFakjRff6HwijQSA~Airla684z1Is_YdQgXvNkeDJCwnEaivgWEuIpGeL1myPgcjEV_qMzxrYUzDd0-lI");
+			 });
 
-		return builder.Build();
+        return builder.Build();
 	}
 }

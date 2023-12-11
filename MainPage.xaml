@@ -30,8 +30,8 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="Apasa-ma"
-                SemanticProperties.Hint="Daca vrei da click"
+                Text="Click me"
+                SemanticProperties.Hint="Level3"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
